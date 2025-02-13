@@ -2,10 +2,10 @@ using System.Collections;
 using UnityEngine;
 
 [SerializeField,CreateAssetMenu(fileName ="Ability1",menuName ="Create new wololo")]
-public class Wololo : AAbility
+public class ChangeColorAbility : AAbility
 {
     public string AbilityDisplayName => "Team Changing Wololo";
-    public float CoolDown => 5.5f;
+    public override float CoolDown => 3.5f;
     public AudioClip actionsound;
     public override IEnumerator Action(GameObject caster)
     {

@@ -7,5 +7,6 @@ using UnityEngine;
 public abstract class AAbility : ScriptableObject
 {    
     [SerializeField]public bool Ready {get;internal set;} = true;
+    [SerializeField] public abstract float CoolDown{get;}
     public abstract IEnumerator Action(GameObject caster);
 }

@@ -2,10 +2,10 @@ using System.Collections;
 using UnityEngine;
 
 [SerializeField,CreateAssetMenu(fileName ="Ability2",menuName ="Create new rudah")]
-public class FusRoDah : AAbility
+public class PlaySoundIfRed : AAbility
 {
     public string AbilityDisplayName => "Fus RuDah!";
-    public float CoolDown => 7.5f;
+    public override float CoolDown => 10;
     public AudioClip actionsound;
     public override IEnumerator Action(GameObject caster)
     {
